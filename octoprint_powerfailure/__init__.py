@@ -48,7 +48,7 @@ class PowerFailurePlugin(octoprint.plugin.TemplatePlugin,
             "linear_advance": None
         }
 
-        self.MOVE_RE = re.compile("^G0\s+|^G1\s+")
+        self.MOVE_RE = re.compile(r"^G0\s+|^G1\s+")
         self.X_COORD_RE = re.compile(r".*\s+X([-]*\d*\.*\d*)")
         self.Y_COORD_RE = re.compile(r".*\s+Y([-]*\d*\.*\d*)")
         self.E_COORD_RE = re.compile(r".*\s+E([-]*\d*\.*\d*)")
