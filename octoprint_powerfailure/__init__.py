@@ -395,10 +395,10 @@ class PowerFailurePlugin(octoprint.plugin.TemplatePlugin,
 
                 type="github_release",
                 current=self._plugin_version,
-                user="pablogventura",
-                repo="Octoprint-PowerFailure",
+                user="jescholl",
+                repo="OctoPrint-PowerFailure",
 
-                pip="https://github.com/pablogventura/OctoPrint-PowerFailure/archive/{target_version}.zip"
+                pip="https://github.com/jescholl/OctoPrint-PowerFailure/archive/{target_version}.zip"
             )
         )
 
