@@ -227,6 +227,9 @@ class PowerFailurePlugin(octoprint.plugin.TemplatePlugin,
             }
         ]
 
+    def is_template_autoescaped(self):
+        return True
+
     def backupState(self):
         if not self._printer.is_printing():
             return
